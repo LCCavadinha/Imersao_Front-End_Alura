@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Imersão</title>
+    
+    <!-- Importando o reset da página -->
+    <!-- Atenção na ordem dos imports css o último import sobrescreve o primeiro, o reset sempre vem primeiro pra deixar a página zerada -->
+    <link rel="stylesheet" href="reset.css">
+    
+    <!-- Arquivo de estilização da página -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- Import de ícones que serão usados -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">    
+
+</head>
+<body>
+    <!-- Criando o sidebar da página com a tag div de classe sidebar para estilizar com o css -->
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="./assets/icons/Spotify-Logo.png" alt="Logo do Spotfy">
+                </a>
+            </div> 
+            <div>   
+                <div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-home"></span>
+                                <!-- Criação da class espaco movimentar e sublinhar a palavra separando do ícone quando o cursor passar por cima -->
+                                <span class="espaco">Início</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-search"></span>
+                                <span class="espaco">Buscar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-sliders-h"></span>
+                                <span class="espaco">Equalizador</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-podcast"></span>
+                                <span class="espaco">Podcasts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="sidebar__library">
+            <div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-book"></span>
+                                <span class="espaco">Sua Biblioteca</span>
+                                <span  class="fa fa-plus"></span>
+                                <span class="fa fa-arrow-right"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
