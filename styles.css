@@ -174,13 +174,17 @@ body {
     padding: 10px;
     margin-top: 12px;
     border-radius: 20px;
-    border: 0px;
+    border: solid 1px #000000;
     width: 113px;
     font-size: 12px;
     font-weight: 700;
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
+}
+
+.section-playlist__content .section-playlist__button:hover{
+    text-decoration: underline;
 }
 
 .library .cookies {
@@ -231,6 +235,7 @@ body {
 .disclaimer-premium .disclaimer-premium__title {
     color: #ffffff;
     /* Propriedade usada para deixar todo texto em caixa alta. */
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
@@ -241,6 +246,7 @@ body {
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .disclaimer-premium button {
@@ -253,6 +259,7 @@ body {
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+    font-family: "DM Sans", sans-serif;
 }
 
 .disclaimer-premium button:hover {
