@@ -28,53 +28,65 @@
                 </a>
             </div> 
             <div>   
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-home"></span>
-                                <!-- Criação da class espaco movimentar e sublinhar a palavra separando do ícone quando o cursor passar por cima -->
-                                <span class="espaco">Início</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-search"></span>
-                                <span class="espaco">Buscar</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-sliders-h"></span>
-                                <span class="espaco">Equalizador</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-podcast"></span>
-                                <span class="espaco">Podcasts</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"></span>
+                            <!-- Criação da class espaco movimentar e sublinhar a palavra separando do ícone quando o cursor passar por cima -->
+                            <span class="espaco">Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span class="espaco">Buscar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-sliders-h"></span>
+                            <span class="espaco">Equalizador</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-podcast"></span>
+                            <span class="espaco">Podcasts</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <nav class="sidebar__library">
-            <div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-book"></span>
-                                <span class="espaco">Sua Biblioteca</span>
-                                <span  class="fa fa-plus"></span>
-                                <span class="fa fa-arrow-right"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
             </div>
-        </nav>
+            <!-- Criação da tag section para colocar as playlists -->
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title"> Crie sua primeira playlist</span>
+                    <span class="subtitle">É fácil, vamos te ajudar.</span>
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
