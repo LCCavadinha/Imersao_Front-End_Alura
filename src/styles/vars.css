@@ -1,0 +1,9 @@
+/*                                                                     */
+/* Arquivo feito com a finalida de agrupar os estilos usados na página */
+/*                                                                     */
+
+:root{
+ /* FONTS  por exemplo, serve para definir um padrão de fontes que serão usadas no projeto, para alterar todas de uma vez,
+ só precisamos alterar nas variáveis*/
+    --font-dm-sans: "DM Sans", sans-serif;
+}

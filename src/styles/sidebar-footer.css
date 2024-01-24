@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(to bottom, #000, #121212, #0F5C29, #1DB954  );
     min-height: 100vh;
+    /* Variável da fonte padrão usada no projeto */
+    font-family: var(--font-dm-sans);
 }
 
 /* Começo da estilização do Sidebar */
@@ -41,7 +43,7 @@ body {
     color: #b3b3b3;
     font-weight: 600;
     font-size: 16px;
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
     text-decoration: none;
 }
 
@@ -94,7 +96,7 @@ body {
     border: 0px;
     font-size: 16px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -152,7 +154,7 @@ body {
 .section-playlist__content .text {
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
 }
 
 .section-playlist__content .title {
@@ -163,12 +165,13 @@ body {
     font-weight: 500;
     font-size: 14px;
     color: #fff;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .section-playlist__content .section-playlist__button {
     display: flex;
     justify-content: center;
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -259,7 +262,7 @@ body {
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
 }
 
 .disclaimer-premium button:hover {
