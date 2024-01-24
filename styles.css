@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background: linear-gradient(to bottom, #000, #121212, #0F5C29, #1DB954  );
+    min-height: 100vh;
 }
 
 /* Começo da estilização do Sidebar */
@@ -10,13 +11,13 @@ body {
     bottom: 0;
     padding: 12px;
     width: 300px;
+    flex: 1;
 }
 
 .sidebar__navigation {
     background-color: #121212;
     border-radius: 8px;
     padding: 16px 0 0 16px;
-    cursor: pointer;
 }
 
 .sidebar__navigation .logo {
@@ -99,6 +100,13 @@ body {
     text-transform: none;
     padding: 20px 10px;
 }
+
+.library .library__button:hover{
+    text-decoration: underline;
+    color: #1DB954;
+    cursor: pointer;
+}
+
 /* estilização do ícone book  */
 .library .library__button .fa {
     font-size: 20px;
@@ -109,6 +117,11 @@ body {
 
 .library .library__content .fa-plus {
     margin: 24px 10px;
+    cursor: pointer;
+}
+
+.library .library__content .fa-plus:hover{
+    color: #fff;
 }
 
 /* Fim da estilização do botão sua biblioteca */
@@ -167,6 +180,7 @@ body {
     font-weight: 700;
     background-color: #fff;
     color: #000;
+    cursor: pointer;
 }
 
 .library .cookies {
@@ -195,4 +209,55 @@ body {
     width: 170px;
     margin: 8px;
     padding: 8px;
+}
+
+/* Começo da estilização do footer  */
+
+.disclaimer-premium {
+    /* Position: fixed; para que o footer fique no fundo da tela */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* bottom precisa ser 0 para garantir junto com a propriedade position fixed o nosso footer fique fixo embaixo da tela  */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #000, #121212, #0F5C29, #1DB954);
+    padding: 15px 40px;
+}
+.disclaimer-premium .text {
+    flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    /* Propriedade usada para deixar todo texto em caixa alta. */
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: #ffffff 1px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.disclaimer-premium button:hover {
+    text-decoration: underline;
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 1px solid;
 }
