@@ -61,6 +61,10 @@
     border: 1px solid transparent;
 }
 
+.header__search:hover{
+    border: 1px solid #ffffff;
+}
+
 .header__search img{
     width: 16px;
     height: 16px;
@@ -79,6 +83,61 @@
     /* Se o texto for muito grande o texto não vai quebrar a linha com essa propriedade */
     white-space: nowrap;
     outline: none;
+}
+
+.header__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilização do botão download */
+.header__buttons .download-app {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 35px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #000000;
+    border: none;
+    justify-content:space-around;
+    margin-left: 300px;
+}
+
+.header__buttons .download-app .fa {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header__buttons .download-app:hover {
+    border: 1px solid #ffffff;
+}
+
+.header__buttons .header-news{
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+    border: none;
+    background-color: #000000;
+}
+
+.header__buttons .header-news .fa{
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header__buttons .header-news:hover{
+    border: 1px solid #ffffff;
 }
 
 .header__login .subscribe {
@@ -104,4 +163,13 @@
     font-weight: 700;
     border-radius: 40px;
     cursor: pointer;
+    background-color: #ffffff;
+}
+
+.header__login .login:active {
+    background-color: #1DB954;
+}
+
+.header__login .login:hover {
+    text-decoration: underline;
 }
