@@ -11,6 +11,9 @@
 
     <!-- Import de variáveis que serão usadas no projeto -->
     <link rel="stylesheet" href="src/styles/vars.css">
+
+    <!-- Import do arquivo de estilização do conteúdo principal -->
+    <link rel="stylesheet" href="./src/styles/main-content.css">
     
     <!-- Arquivo de estilização do sidebar e footer-->
     <link rel="stylesheet" href="src/styles/sidebar-footer.css">
@@ -29,37 +32,36 @@
                 <a href="">
                     <img src="./src/assets/icons/Spotify-Logo.png" alt="Logo do Spotfy">
                 </a>
-            </div> 
-            <div>   
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="fa fa-home"></span>
-                            <!-- Criação da class espaco movimentar e sublinhar a palavra separando do ícone quando o cursor passar por cima -->
-                            <span class="espaco">Início</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="fa fa-search"></span>
-                            <span class="espaco">Buscar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="fa fa-sliders-h"></span>
-                            <span class="espaco">Equalizador</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="fa fa-podcast"></span>
-                            <span class="espaco">Podcasts</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            </div>    
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <!-- Criação da class espaco movimentar e sublinhar a palavra separando do ícone quando o cursor passar por cima -->
+                        <span class="espaco">Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span class="espaco">Buscar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-sliders-h"></span>
+                        <span class="espaco">Equalizador</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-podcast"></span>
+                        <span class="espaco">Podcasts</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
+
         <div class="library">
             <div class="library__content">
                 <button class="library__button">
@@ -68,6 +70,7 @@
                 </button>
                 <span class="fa fa-plus"></span>
             </div>
+
             <!-- Criação da tag section para colocar as playlists -->
             <section class="section-playlist">
                 <div class="section-playlist__content">
@@ -91,6 +94,34 @@
             </div>
         </div>
     </div>
+
+    <!-- Início do conteúdo principal -->
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <!-- O alt nesse caso pode ficar vazio, por que não está sendo usado como valor de imagem -->
+                    <img src="src/assets/icons/search.png" alt="">
+                    <!-- Criação do id para ser usado no JS e propriedade maxlength para definir o máximo de caracteres a serem usados -->
+                    <!-- Propriedade placeholder para dar uma uma sujestão ao usuário -->
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
 
     <!-- Criação do footer criando uma classe dentro do footer para posiciona-la de forma fixa e informar corretamente
     ao navegador a inteção do footer através do aviso premium.-->

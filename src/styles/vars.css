@@ -6,4 +6,9 @@
  /* FONTS  por exemplo, serve para definir um padrão de fontes que serão usadas no projeto, para alterar todas de uma vez,
  só precisamos alterar nas variáveis*/
     --font-dm-sans: "DM Sans", sans-serif;
+
+    /* COLORS */
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,07);
+    --bg-search-color: #242424;
 }
