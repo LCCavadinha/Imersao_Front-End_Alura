@@ -11,8 +11,8 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 12px;
-    width: 350px;
+    padding: 10px;
+    width: 308px;
     flex: 1;
 }
 
@@ -31,7 +31,7 @@ body {
 
 
 .sidebar nav ul {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0 20px 10px 20px;
 }
 
@@ -100,7 +100,7 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    padding: 20px 10px;
+    padding: 15px 5px;
 }
 
 .library .library__button:hover{
@@ -118,7 +118,7 @@ body {
 }
 
 .library .library__content .fa-plus {
-    margin: 24px 10px;
+    margin: 15px 10px;
     cursor: pointer;
 }
 
@@ -140,7 +140,7 @@ body {
     background-color: #242424;
     font-weight: 600;
     font-size: 16px;
-    margin: 8px 0px;
+    margin: 7px 0px;
     padding: 16px 20px;
     border-radius: 10px;
 }
@@ -163,7 +163,7 @@ body {
 
 .section-playlist__content .subtitle {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -190,18 +190,152 @@ body {
     text-decoration: underline;
 }
 
-.library .cookies {
-    margin: 25px 20px;
+/* Fim da seção Playlist */
+
+/* Início da seção Podcasts */
+
+.section-podcast {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* Propriedade gap vai de definir qual o espaço dado entre os itens, o space-betwen da o espaço o gap define qual é o espaçamento */
+    gap: 20px;
+    color: #b3b3b3;
+    background-color: #242424;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 7px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-podcst .section-podcast__content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-podcast__content .text {
+    padding-bottom: 14px;
+    color: #fff;
+    white-space: nowrap;
+    /* font-family: "DM Sans", sans-serif; */
+}
+
+.section-podcast__content .title {
+    font-weight: 700;
+}
+
+.section-podcast__content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.section-podcast__content .section-podcast__button {
+    display: flex;
+    justify-content: center;
+    /* font-family: "DM Sans", sans-serif; */
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: solid 1px #000000;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.section-podcast__content .section-podcast__button:hover{
+    text-decoration: underline;
+}
+
+/* Fim da Seção podcast */
+.library .informs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0 5px 0;
+}
+
+.library .cookies{
+    margin: 0 8px 8px 8px;
 }
 
 .library .cookies a {
     color: #b3b3b3;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
 }
 
 .library .cookies a:hover {
+    text-decoration: underline;
+}
+
+.library .privacy{
+    margin: 0 8px 8px 8px;
+}
+
+.library .privacy a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.library .privacy a:hover {
+    text-decoration: underline;
+}
+
+.library .legal{
+    margin: 0 8px 8px 8px;
+}
+
+.library .legal a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.library .legal a:hover {
+    text-decoration: underline;
+}
+
+.library .adverts{
+    margin: 0 8px 8px 8px;
+}
+
+.library .adverts a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.library .adverts a:hover {
+    text-decoration: underline;
+}
+
+.library .accessibility{
+    margin: 0 8px 8px 8px;
+}
+
+.library .accessibility a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.library .accessibility a:hover {
     text-decoration: underline;
 }
 

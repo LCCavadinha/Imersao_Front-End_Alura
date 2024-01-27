@@ -7,7 +7,7 @@
     /* vh = viewport height */
     height: 100vh;
     margin-left: 320px;
-    margin-right: 56px;
+    margin-right: 58px;
 }
 
 .header__navigation {
@@ -172,4 +172,31 @@
 
 .header__login .login:hover {
     text-decoration: underline;
+}
+
+/* Início da playlist */
+
+.playlist-container {
+    height: 74vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist #greeting {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.playlist .session {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
 }
