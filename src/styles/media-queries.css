@@ -1,0 +1,7 @@
+
+/* Seletor criado para que todo o conteúdo criado fique dentro dessa resolução. */
+@media screen and (max-width: 1015px ) {
+    .offer__list-item{
+        grid-template-columns: 1fr 1fr;
+    }
+}

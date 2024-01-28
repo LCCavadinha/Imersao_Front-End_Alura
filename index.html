@@ -12,11 +12,15 @@
     <!-- Import de variáveis que serão usadas no projeto -->
     <link rel="stylesheet" href="src/styles/vars.css">
 
+    <!-- Arquivo de estilização do sidebar e footer-->
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+
     <!-- Import do arquivo de estilização do conteúdo principal -->
     <link rel="stylesheet" href="./src/styles/main-content.css">
     
-    <!-- Arquivo de estilização do sidebar e footer-->
-    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+    <!-- Import do media-queries para dar responsividade a página,  -->
+    <!-- Esse import sempre precisa vir depois dos outros se vier primeiro ele vai ser sobrescrito pelos outros. -->
+    <link rel="stylesheet" href="./src/styles/media-queries.css">
 
 
     <!-- Import de ícones que serão usados no projeto -->
@@ -292,6 +296,25 @@
                         </div>
                     </div>
                 </div>
+                <!-- Id usado para auxiliar o JS na busca -->
+                <div id="result-artist" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img id="artist-img" class="artist-img" />
+                                <div class=  "play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -310,5 +333,7 @@
             <button type="button">Inscreva-se grátis</button>
         </div>
     </footer>
+    <!-- Linkar o JS sempre no final da página, porque caso tenha algum erro no arquivo não vai afetar o carregamento total da página -->
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
