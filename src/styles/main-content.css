@@ -1,3 +1,4 @@
+
 /* Header */
 
 .main-container {
@@ -17,7 +18,7 @@
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #121212;
+    background-color: var(--bg-container-color);
 }
 
 .header__navigation .navigation {
@@ -35,7 +36,7 @@
 .arrow-left, .arrow-right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 32px;
     height: 32px;
     background: var(--bg-icon);
@@ -75,14 +76,15 @@
     background: transparent;
     border: none;
     padding:0 100px 0 12px;
-    color: #fff;
+    color: var(--text-base-light);
     /* Essas duas propriedades trabalham juntas, text-overflow e overflow, se você digita um texto maior que o campo
     designado ele substitui o começo do texto por reticências*/
+    text-overflow: ellipsis;
+    outline: none;
     text-overflow: ellipsis;
     overflow: hidden;
     /* Se o texto for muito grande o texto não vai quebrar a linha com essa propriedade */
     white-space: nowrap;
-    outline: none;
 }
 
 .header__buttons{
@@ -97,19 +99,19 @@
     align-items: center;
     width: 170px;
     height: 35px;
-    color: #ffffff;
+    color: var(--text-base-light);
     font-size: 14px;
     font-weight: 700;
     border-radius: 40px;
     cursor: pointer;
-    background-color: #000000;
+    background-color: var(--text-base-dark);
     border: none;
     justify-content:space-around;
     margin-left: 300px;
 }
 
 .header__buttons .download-app .fa {
-    color: #ffffff;
+    color: var(--text-base-light);
     background-color: transparent;
 }
 
@@ -128,11 +130,11 @@
     font-size: 12px;
     margin-left: 10px;
     border: none;
-    background-color: #000000;
+    background-color: var(--text-base-dark);
 }
 
 .header__buttons .header-news .fa{
-    color: #ffffff;
+    color: var(--text-base-light);
     background-color: transparent;
 }
 
@@ -141,7 +143,7 @@
 }
 
 .header__login .subscribe {
-    color: #a7a7a7;
+    color: var(--text-sub);
     font-size: 16px;
     font-weight: 700;
     background-color: transparent;
@@ -152,22 +154,22 @@
 
 .header__login .subscribe:hover{
     text-decoration: underline;
-    color:  #1DB954;
+    color: var(--color-nav-hover);
 }
 
 .header__login .login{
     width: 100px;
     height: 40px;
-    color: #000;
+    color: var(--text-base-dark);
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: var(--text-base-light);
 }
 
 .header__login .login:active {
-    background-color: #1DB954;
+    background-color: var(--color-nav-hover);
 }
 
 .header__login .login:hover {
@@ -181,7 +183,7 @@
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #121212;
+    background-color: var(--bg-container-color);
 }
 
 .playlist {
@@ -189,14 +191,14 @@
 }
 
 .playlist #greeting {
-    color: #fff;
+    color: var(--text-base-light);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 48px;
 }
 
 .playlist .session {
-    color: #fff;
+    color: var(--text-base-light);
     font-size: 24px;
     font-weight: 700;
 }
@@ -222,7 +224,7 @@
   /* FIM SCROLL */
 
 .offer__list-item {
-    display: grid;
+    /* display: grid;
     justify-items: center;
     /* Aqui definimos quantas coludas desejamos ter em nosso container 1fr reperesenta uma coluna, sem essa propriedade
     todas os cards ficariam alianhandos um embaixo do outro */
@@ -232,9 +234,9 @@
     /* A diferença entre grid-gap e gap é que o gap é a versão mais recente e recomendada,
     usar amabas ao mesmo tempo pode ser redundante, projetos para navegadores que suportam a versão mais recente
     se usa o gap, se você não souber pra qual navegador se usa as duas com valores iguais  */
-    /* grid-gap: 16px; */ 
-    gap: 16px;
-    margin-bottom: 16px;
+    /* grid-gap: 16px;  */
+    /* gap: 16px; */
+    /* margin-bottom: 16px;  */
 
     /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
     display: grid;
@@ -255,7 +257,7 @@
 .cards span {
     padding: 16px;
     position: absolute;
-    color: #fff;
+    color: var(--text-base-light);
     font-size: 24px;
     font-weight: 700;
 }
@@ -272,7 +274,7 @@
 
   /* COLOR CARDS */
 .card1 {
-    background-color: rgb(0, 100, 80);
+background-color: rgb(0, 100, 80);
 }
 .card2 {
     background-color: rgb(132, 0, 231);
@@ -316,6 +318,187 @@
 .card15 {
     background: rgb(60, 30, 80);
 }
-  /* FIM COLOR CARDS */
+.card16 {
+    background: rgb(12, 83, 32);
+}
+.card17 {
+    background: rgb(216, 0, 18);
+}
+.card18 {
+    background: rgb(222, 237, 14);
+}
+.card19 {
+    background: rgb(33, 139, 210);
+}
+.card20 {
+    background: rgb(61, 50, 68);
+}
 
+    /* FIM COLOR CARDS */
+    
+    /* HOVER CARDS */
+    .cards:hover .card1 img,
+    .cards:hover .card2 img,
+    .cards:hover .card3 img,
+    .cards:hover .card4 img,
+    .cards:hover .card5 img,
+    .cards:hover .card6 img,
+    .cards:hover .card7 img,
+    .cards:hover .card8 img,
+    .cards:hover .card9 img,
+    .cards:hover .card10 img,
+    .cards:hover .card11 img,
+    .cards:hover .card12 img,
+    .cards:hover .card13 img,
+    .cards:hover .card14 img,
+    .cards:hover .card15 img,
+    .cards:hover .card16 img,
+    .cards:hover .card17 img,
+    .cards:hover .card18 img,
+    .cards:hover .card19 img,
+    .cards:hover .card20 img{
+        transform: translateX(-50%) scale(1.3);
+        bottom: 10px;
+        transition: transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .cards:not(:hover) .card1 img, 
+    .cards:not(:hover) .card2 img, 
+    .cards:not(:hover) .card3 img, 
+    .cards:not(:hover) .card4 img, 
+    .cards:not(:hover) .card5 img, 
+    .cards:not(:hover) .card6 img, 
+    .cards:not(:hover) .card7 img, 
+    .cards:not(:hover) .card8 img, 
+    .cards:not(:hover) .card9 img, 
+    .cards:not(:hover) .card10 img, 
+    .cards:not(:hover) .card11 img, 
+    .cards:not(:hover) .card12 img, 
+    .cards:not(:hover) .card13 img, 
+    .cards:not(:hover) .card14 img, 
+    .cards:not(:hover) .card15 img, 
+    .cards:not(:hover) .card16 img, 
+    .cards:not(:hover) .card17 img, 
+    .cards:not(:hover) .card18 img, 
+    .cards:not(:hover) .card19 img, 
+    .cards:not(:hover) .card20 img {
+        bottom: 0;
+        transition: transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
 
+/* CARD ARTISTA */
+
+/* Seletor usado para que o resultado da busca apareça no conteúdo principal */
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
+/* Seletor usado para esconder elemento(os) da página */
+.hidden {
+    /* Usando a propriedade diplay e o valor none, faz com que o elemento só apareça se for pesquisado, não ocupando 
+    o espaço da tela enquanto estiver oculto */
+    display: none;
+}
+
+/* Nesse seletor definimos os tamanho do container que aparece na busca */
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+.artist-card {
+    background: var(--bg-card-color);
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    /* Propriedade usada para uma mudança de cor suave ao container */
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.artist-card:hover {
+    background-color: var(--bg-card-color-hover);
+}
+
+.card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-base-light);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-categorie {
+    color: var(--color-artist);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: var(--color-nav-hover);
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px;
+}
+  /* FIM CARD ARTISTA */

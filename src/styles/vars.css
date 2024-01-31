@@ -8,12 +8,29 @@ só precisamos alterar nas variáveis*/
     --font-dm-sans: "DM Sans", sans-serif;
 
     /* COLORS */
-    --bg-icon: #131313;
-    --bg-arrow-color: rgba(0,0,07);
-    --bg-search-color: #242424;
+    /* Body */
+    --bg-body: linear-gradient(to bottom, #000, #121212, #0F5C29, #1DB954  );
 
-    --text-base-dark: #000;
+    /* Containers */
+    --bg-container-color: #121212;
+
+    /* Sidebar */
+    --color-nav-text: #b3b3b3;
+    --color-nav: #131313;
     --text-base-light: #fff;
+    --bg-search-color: #242424;
+    --text-base-dark: #000;
+    /* Hover-Sidebar */
+    --color-nav-hover: #1DB954;
+
+    /* Footer */
+    --bg-footer:linear-gradient(to right, #000, #121212, #0F5C29, #1DB954);
+
+    --bg-arrow-color: rgba(0,0,07);
+    
+    --bg-card-color:#181818;
+    --bg-card-color-hover:#252525;
+    --color-artist:#6a6a6a;
     --text-sub: #a7a7a7;
 
 
@@ -21,24 +38,7 @@ só precisamos alterar nas variáveis*/
     --grid-gap: 24px;
     --column-count: 5;
 
-  /* Colors Cards */
-    --card1: rgb(0, 100, 80);
-    --card2: rgb(132, 0, 231);
-    --card3: rgb(30, 50, 100);
-    --card4: rgb(140, 25, 50);
-    --card5: rgb(232, 17, 91);
-    --card6: rgb(83, 122, 161);
-    --card7: rgb(142, 102, 172);
-    --card8: rgb(20, 138, 8);
-    --card9: rgb(30, 50, 100);
-    --card10: rgb(233, 20, 41);
-    --card11: rgb(80, 55, 80);
-    --card12: rgb(216, 64, 0);
-    --card13: rgb(186, 93, 7);
-    --card14: rgb(0, 30, 80);
-    --card15: rgb(60, 30, 80);
 }
-
 /* MEDIA QUERYS */
 @media screen and (max-width: 767px) {
 }
